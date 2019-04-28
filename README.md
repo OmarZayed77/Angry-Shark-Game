@@ -1,1 +1,1 @@
-# Angry Shark Web Game using Native Javascript (Vanillia js)
+# Angry Shark Web Game using Native Javascript (Vanilla js)
