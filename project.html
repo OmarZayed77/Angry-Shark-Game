@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angry Shark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="project.css"/>
+</head>
+<body>
+        <div class="bubbles"></div>
+            <div class="container backgr" id="welcome">
+                <img src="images/shark.png" alt="shark photo" id="logo">
+                <div id="game-name">Angry Shark</div>
+                <input type="text" name="playerName" id="player-name" placeholder="Enter Your Name">
+                <div class="btns">
+                    <button class="btn" id="cont">Continue</button>
+                    <button class="btn" id="new-player">New Player</button>
+                </div>
+            </div>
+            <div class="container" id="game">
+                    
+                    <div class="header"> 
+                        <span id="current-player"></span>
+                        <span class="level-container">Level: <span id="level"></span></span>
+                        <span class="span1"><i class="fas fa-heart"></i>X<span id="life"></span> </span>
+                        <span class="span4"><i class="fas fa-star"></i>Score: <span id="score"></span></span>
+                        <span class="span3"><i class="fas fa-rocket"></i>Missiles: <span id="missile"></span> </span>
+                        <span id="pause"><i class="fas fa-pause"></i></span>
+                        <span id="volume"><i class="fas fa-volume-up"></i></span>
+                    </div>
+                    <span class="ctrl ctrl-1" id="up"><i class="fas fa-arrow-circle-up"></i><span class="updown">Up</span></span>
+                    <span class="ctrl ctrl-2" id="down"><i class="fas fa-arrow-circle-down"></i><span class="updown">Down</span></span>
+                   <span class="ctrl ctrl-3" id="shoot"><i class="fab fa-affiliatetheme"></i><span class="shiftbtn">Space</span></span>
+                    <img src="images/shark-game.png" alt="your shark" id="shark">
+            </div>
+            <div class="container" id="end">
+                <span id="lose">You&nbsp;&nbsp;Lost!</span><br>
+                <span id="fscore">Your Final Score is:<br>
+                <span id="final-score"></span></span>
+            </div>
+    <script src="project.js"></script>
+</body>
+</html>

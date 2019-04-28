@@ -1,0 +1,268 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-size: 1.6rem;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.959);
+}
+
+.container
+{
+    width: 100%;
+    height: -webkit-fill-available;
+    margin:auto;
+    padding: 0.5rem;
+    background-color: rgb(110, 200, 236);
+    position: relative;
+}
+.backgr
+{
+    background: linear-gradient(rgba(68, 151, 161, 0.6),rgba(0,0,0,0.6)),url("images/painel-fundo-do-mar-g-frete-gratis-painel-festa-infantil.jpg") no-repeat;
+    background-size: cover;
+}
+#logo
+{  
+    position: absolute;
+    top: 0;
+    left: 42%;
+    width: 20%;
+}
+#game-name
+{
+    color: gold;
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 18%;
+    margin-bottom: 7rem;
+}
+#player-name
+{  
+     margin-left: 16rem;
+    display: block;
+    width: 40%;
+    height: 7rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: rgb(231, 233, 116);
+    font-family: monospace;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(51, 51, 50, 0.157);
+    border-radius: 3rem;
+    border-color: gold ;
+}
+#player-name:focus
+{
+    outline: none ;
+}
+
+.btns{
+  display: flex ;
+  margin: auto;
+  justify-content: center;
+}
+.btn
+{   
+border: 1px solid #03032e00;
+background: rgba(26, 4, 226, 0.007);
+font-size: 40px;
+color: white;
+margin-top: 20px;
+padding: 10px 25px;
+margin-left: 30px;
+cursor: pointer;
+transition: .4s;
+font-weight: bold;
+font-family:'Fontdiner Swanky', cursive ;
+font-weight: 600;
+border-radius: 100%;
+}
+.btn:hover{
+  background: rgba(20, 20, 20, 0.8);
+  padding: 10px 80px;
+  color:gold;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.btn:focus
+{
+  outline: none;
+}
+#cont
+{
+    margin-left: 5rem;
+    display: inline-block;
+}
+#new-player:hover, #cont:hover
+{
+  background-color: rgba(245, 245, 245, 0);
+
+}
+.header
+{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 4rem;
+}
+.header i
+{
+    font-size: 5rem;
+    margin: 0.5rem;
+}
+.ctrl
+{
+    position: relative;
+    top: 56rem;
+    color: rgb(90, 80, 80);
+    font-size: 10rem;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .ctrl span
+  {
+    font-size: 3rem;
+  }
+  .ctrl:hover
+  {
+    color: white;
+  }
+#up
+{
+  left: 3rem;
+}
+#down
+{
+  left: 6rem;
+}
+#shoot
+{
+  left: 100rem;
+}
+/* #shoot:hover
+{
+  border: 3px solid white;
+} */
+#shark
+{
+  width: 100px;
+  position: absolute;
+  right: 920px;
+}
+.fish, .sub, .missile
+{
+  width: 70px;
+  position: absolute;
+}
+#game, #end
+{
+  background-image: url('images/bg.png');
+  background-size: 100% 100%;
+}
+#end
+{
+  font-family: 'Fontdiner Swanky', cursive ;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+#lose
+{
+  font-size: 15rem;
+  color: red;
+}
+.level-container
+{
+  color: rgb(58, 143, 58);
+}
+#current-player
+{
+  color: rgb(88, 20, 58);
+  font-weight: bold;
+  font-family: 'Fontdiner Swanky', cursive ;
+  text-transform: uppercase;
+}
+.level-up
+{
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  text-align: center;
+  top: 2.2rem;
+  left: 0;
+  font-size: 15rem;
+  color: red;
+  transition: all 1s;
+  opacity: 0.7;
+}
+#fscore
+{
+  font-size: 5rem;
+}
+#final-score
+{
+  color: green;
+  font-size: 10rem;
+}
+.fa-heart ,.span1{
+  color: red;
+  opacity: .9;
+}
+.fa-shoe-prints ,.span2{
+  color: black;
+  opacity: .9;
+}
+.fa-rocket ,.span3{
+  color: firebrick;
+  opacity: .9;
+}
+.fa-star ,.span4{
+  color: gold;
+  opacity: .9;
+}
+.fa-pause ,.span5{
+  color: black;
+  opacity: .9;
+}
+.fa-volume-up ,span6{
+  color: rgb(248, 248, 244);
+  opacity: .9;
+}
+.fa-affiliatetheme:before {
+  content: "\f36b";
+  display: block;
+  color: firebrick;
+}
+.fa-arrow-circle-up::before {
+  content: "";
+  display: block;
+  color: black;
+}
+.fa-arrow-circle-down::before {
+  content: "";
+  display: block;
+  color: black;
+}
+.shiftbtn{
+  color: firebrick;
+  font-size: 6rem;
+}
+.updown{
+  color:black;
+  font-size: 4rem;
+}
